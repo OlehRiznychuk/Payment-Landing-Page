@@ -29,7 +29,7 @@ a {
   text-align: center;
   width: 100%;
 }
-a:hover {
+a:active {
   color: var(--background-color);
 }
 header {
@@ -54,6 +54,7 @@ header {
 }
 .navbar .logo {
   margin-right: auto;
+  z-index: 999;
 }
 
 .navbar .links {
@@ -112,7 +113,7 @@ header {
   border-radius: 10px;
   padding: 10px;
 }
-.dropdown-menu li:hover {
+.dropdown-menu li:active {
   background-color: var(--primary-color);
 }
 
@@ -213,6 +214,9 @@ h1 {
   }
   .dropdown-menu.open {
     height: 100vh;
+  }
+  .wrapper{
+    padding-top: 100px;
   }
   h1 {
     font-size: 1.5rem;
