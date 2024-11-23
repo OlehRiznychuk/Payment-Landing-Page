@@ -24,3 +24,11 @@ I hope you'll enjoy building this challenge.
 Feel free to share your solution on the website or on social media and tag us.
 
 **Credits** [FrontendPro](https://www.frontendpro.dev/frontend-coding-challenges/payment-landing-page-acBVCvwWg8oc9MlaW6K6)
+
+![Desktop version](https://github.com/OlehRiznychuk/Payment-Landing-Page/blob/main/design/desktop.png)
+
+![Mobile version](https://github.com/OlehRiznychuk/Payment-Landing-Page/blob/main/design/mobile.png)
+
+
+
+
