@@ -1,5 +1,3 @@
-![contact us form](./design/desktop.svg)
-
 **Challenge Title**
 Payment Landing Page
 
@@ -24,3 +22,5 @@ You'll learn to build a Payment Landing Page for a fictional Payment App and you
 I hope you'll enjoy building this challenge.
 
 Feel free to share your solution on the website or on social media and tag us.
+
+**Credits** [FrontendPro](https://www.frontendpro.dev/frontend-coding-challenges/payment-landing-page-acBVCvwWg8oc9MlaW6K6)
