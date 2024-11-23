@@ -26,9 +26,11 @@ a {
   color: var(--font-color);
   font-size: 1rem;
   transition: all 0.1s;
+  text-align: center;
+  width: 100%;
 }
 a:hover {
-  color: var(--primary-color);
+  color: var(--background-color);
 }
 header {
   position: relative;
@@ -90,7 +92,9 @@ header {
   top: 60px;
   width: 300px;
   height: 0;
-  background: rgba(70, 70, 70, 0.2);
+  /* background: rgba(70, 70, 70, 0.2);
+   */
+   background: var(--background-color);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   overflow: hidden;
@@ -105,6 +109,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+.dropdown-menu li:hover {
+  background-color: var(--primary-color);
 }
 
 .dropdown-menu .buttons-container {
@@ -196,6 +205,8 @@ h1 {
     width: 100%;
     z-index: 998;
     right: 0;
+    top: 0;
+    bottom: 0;
   }
   .toggle-btn {
     z-index: 999;
