@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #e9dcff;
+  --secondary-color: #2b2d3d;
+  --background-color: #1e1e1e;
+  --font-color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1rem;
+  transition: all 0.1s;
+}
+a:hover {
+  color: var(--primary-color);
+}
+header {
+  position: relative;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1500px;
+  /* margin: 0 auto; */
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .buttons-container {
+  margin-left: auto;
+}
+.navbar .logo {
+  margin-right: auto;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 3.75rem;
+}
+.navbar .toggle-btn svg {
+  fill: var(--primary-color);
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+.btn {
+  width: 132px;
+  height: 54px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  /* padding: 0.5rem; */
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #c4b7da;
+}
+.nav-btn {
+  margin: 5px;
+}
+.dropdown-menu {
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  height: 0;
+  background: rgba(70, 70, 70, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open {
+  height: 19rem;
+}
+
+.dropdown-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  width: 100%;
+}
+.hidden {
+  display: none !important;
+}
+section#title {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+  width: 100%;
+}
+.title-content {
+  display: flex;
+  flex-direction: column;
+  color: var(--font-color);
+  gap: 30px;
+  width: 33.875rem;
+}
+.title-content p {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  letter-spacing: 10px;
+}
+h1 {
+  font-size: 55px;
+  font-weight: 600;
+}
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .btn {
+    display: none;
+  }
+  .navbar .toggle-btn svg {
+    display: block;
+  }
+  header {
+    margin-bottom: 50px;
+  }
+  .toggle-btn {
+    z-index: 999;
+  }
+  section#title {
+    flex-direction: column;
+    justify-content: left;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .title-content {
+    width: auto;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  section#title p {
+    font-size: 0.9rem;
+    letter-spacing: 5px;
+  }
+
+  .img-container img {
+    max-width: 130%;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .dropdown-menu {
+    width: 100%;
+    z-index: 998;
+    right: 0;
+  }
+  .toggle-btn {
+    z-index: 999;
+  }
+  .dropdown-menu.open {
+    height: 100vh;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .title-content {
+    margin-bottom: 30px;
+  }
+}
